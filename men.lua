@@ -79,10 +79,10 @@ local drag = function(obj, latency)
 end
 
 local library = {
-    version = "2.0.2",
-    title = title or "xsx " .. tostring(math.random(1,366)),
+    version = "1",
+    title = title or "catalyst " .. tostring(math.random(1,366)),
     fps = 0,
-    rank = "private"
+    rank = "free"
 }
 
 coroutine.wrap(function()
@@ -202,7 +202,7 @@ function library:Watermark(text)
         end
     end
 
-    tetx = text or "xsx v2"
+    tetx = text or "catalyst v1"
 
     local watermark = Instance.new("ScreenGui")
     local watermarkPadding = Instance.new("UIPadding")
@@ -326,7 +326,7 @@ function library:Watermark(text)
 
     local WatermarkFunctions = {}
     function WatermarkFunctions:AddWatermark(text)
-        tetx = text or "xsx v2"
+        tetx = text or "catalyst v1"
 
         local edge = Instance.new("Frame")
         local edgeCorner = Instance.new("UICorner")
